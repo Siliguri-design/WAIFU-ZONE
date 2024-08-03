@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaifuZone</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="site-data/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="site-data/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="site-data/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="site-data/favicon-16x16.png">
+    <link rel="manifest" href="site-data/site.webmanifest">
+  </head>
+  <body>
+    <header>
+      <div class="toggle-container">
+        <i class="fas fa-sun"></i>
+        <div class="toggle-switch">
+          <input type="checkbox" id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+          <label for="theme-toggle"></label>
+        </div>
+        <i class="fas fa-moon"></i>
+      </div>
+    </header>
+    <main id="main-content">
+      <section id="tag-selection">
+        <h1>ᬊWαιϝυ Zσɳҽ ͢</h1>
+        <h2>🌸𝚂𝚎𝚕𝚎𝚌𝚝 𝙰 𝚃𝚊𝚐🌸</h2>
+        <div class="tags">
+          <div class="tag-box safe-for-work">
+            <h2>🌼𝘚𝘍𝘞 𝘐𝘮𝘢𝘨𝘦𝘴🌼</h2>
+            <h3></h3>
+            <div class="tag-column">
+              <button class="tag-button" data-tag="maid">🫧𝙈𝘼𝙄𝘿🫧</button>
+              <button class="tag-button" data-tag="waifu">🫧𝙒𝘼𝙄𝙁𝙐🫧</button>
+              <button class="tag-button" data-tag="mori-calliope">🫧𝙈𝙤𝙧𝙞 𝘾𝙖𝙡𝙡𝙞𝙤𝙥𝙚🫧</button>
+              <button class="tag-button" data-tag="raiden-shogun">🫧𝙍𝙖𝙞𝙙𝙚𝙣 𝙎𝙝𝙤𝙜𝙪𝙣🫧</button>
+              <button class="tag-button" data-tag="oppai">🫧𝙊𝙥𝙥𝙖𝙞🫧</button>
+              <button class="tag-button" data-tag="uniform">🫧𝙐𝙣𝙞𝙛𝙤𝙧𝙢🫧</button>
+              <button class="tag-button" data-tag="kamisato-ayaka">🫧𝙆𝙖𝙢𝙞𝙨𝙖𝙩𝙤 𝘼𝙮𝙖𝙠𝙖🫧</button>
+            </div>
+          </div>
+          <div class="tag-box not-safe-for-work">
+            <h2>🌺𝙽𝚂𝙵𝚆 𝙸𝚖𝚊𝚐𝚎𝚜🌺</h2>
+            <h3></h3>
+            <div class="tag-column">
+              <button class="tag-button nsfw" data-tag="ass">🫧𝘼𝙎𝙎🫧</button>
+              <button class="tag-button nsfw" data-tag="hentai">🫧𝙃𝙀𝙉𝙏𝘼𝙄🫧</button>
+              <button class="tag-button nsfw" data-tag="milf">🫧𝙈𝙄𝙇𝙁🫧</button>
+              <button class="tag-button nsfw" data-tag="oral">🫧𝙊𝙍𝘼𝙇🫧</button>
+              <button class="tag-button nsfw" data-tag="paizuri">🫧𝙋𝘼𝙄𝙕𝙐𝙍𝙄🫧</button>
+              <button class="tag-button nsfw" data-tag="ecchi">🫧𝙀𝘾𝘾𝙃𝙄🫧</button>
+              <button class="tag-button nsfw" data-tag="ero">🫧𝙀𝙍𝙊🫧</button>
+            </div>
+          </div>
+        </div>
+        <h3>𝙿𝙾𝚆𝙴𝚁𝙴𝙳  𝙱𝚈  <a href="">𝙰𝙽𝙹𝙰𝙽 𝙳𝙷𝙰𝚁</a>
+        </h3>
+      </section>
+      <section id="image-display" class="hidden">
+        <div id="age-verification" class="hidden">
+          <p>𝙰𝚁𝙴 𝚈𝙾𝚄 𝟷𝟾 𝚈𝙴𝙰𝚁 𝙾𝙻𝙳?</p>
+          <button id="age-yes">𝐘𝐄𝐒</button>
+          <button id="age-no">𝐍𝐎</button>
+        </div>
+        <div id="image-container">
+          <img id="image" src="" alt="Generated Image">
+        </div>
+        <div id="image-info" class="hidden">
+          <h4></h4>
+          <p> <a id="artist-name" target="_blank" href="#"></a>
+          </p>
+          <p> <a id="whatsapp-link" target="_blank" href="https://wa.me/qr/ONS6OC44U2MJB1"></a>
+          </p>
+        </div>
+        <div id="image-buttons">
+          <button id="choose-another-tag">🌺𝙷𝙾𝙼𝙴 𝙿𝙰𝙶𝙴🌺</button>
+          <button id="get-another-image">🌸𝚁𝙰𝙽𝙳𝙾𝙼 𝙸𝙼𝙰𝙶𝙴🌸</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a href="" target="_blank">
+        <i class="fab fa-chrome"></i>
+      </a>
+      <a href="https://www.instagram.com/badboyanj">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://wa.me/qr/ONS6OC44U2MJB1" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </footer>
+  </body>
+</html>
